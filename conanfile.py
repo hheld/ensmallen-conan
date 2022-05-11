@@ -13,6 +13,7 @@ class EnsmallenConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "CMakeDeps"
     requires = ["armadillo/10.7.3"]
+    default_options = "armadillo:use_hdf5=False"
 
     def source(self):
         self.run(f"git clone -b {self.version} https://github.com/mlpack/ensmallen.git")
