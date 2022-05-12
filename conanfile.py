@@ -31,5 +31,3 @@ class EnsmallenConan(ConanFile):
         self.copy("*.h", dst="include", src="ensmallen")
         self.copy("*.hpp", dst="include", src="ensmallen")
 
-    def package_info(self):
-        self.cpp_info.libs = ["armadillo"]
