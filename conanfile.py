@@ -1,5 +1,5 @@
 from importlib.metadata import requires
-from conans import ConanFile, CMake, tools
+from conans import ConanFile, CMake
 
 
 class EnsmallenConan(ConanFile):
@@ -7,7 +7,7 @@ class EnsmallenConan(ConanFile):
     version = "2.19.0"
     license = "BSD-3-Clause"
     author = "Harald Held <harald.held@gmail.com>"
-    url = "https://tbd.com"
+    url = "https://github.com/hheld/ensmallen-conan"
     description = "a high-quality C++ library for non-linear numerical optimization"
     topics = ("optimization", "gradient descent", "gradient free", "machine learning")
     settings = "os", "compiler", "build_type", "arch"
